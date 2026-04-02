@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÆTERNA.AI | Automatización de Procesos de Alto Nivel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
+        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); }
+        .gradient-blue { background: linear-gradient(90deg, #fff, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .accent-glow { box-shadow: 0 0 40px rgba(59, 130, 246, 0.15); }
+        .grid-bg { background-image: radial-gradient(circle, #1e293b 1px, transparent 1px); background-size: 40px 40px; }
+        input, select, textarea { background: rgba(255, 255, 255, 0.03) !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; color: white !important; transition: all 0.3s ease; }
+        input:focus, select:focus, textarea:focus { border-color: #3b82f6 !important; outline: none; box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); background: rgba(255, 255, 255, 0.05) !important; }
+    </style>
+</head>
+<body class="antialiased grid-bg">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto sticky top-0 z-50 backdrop-blur-md bg-black/50 border-b border-white/5">
+        <div class="text-2xl font-black tracking-tighter uppercase flex items-center gap-2">
+            <span class="text-blue-500 italic text-3xl font-serif">Æ</span>
+            <span class="tracking-[0.2em]">TERNA<span class="text-blue-500">.AI</span></span>
+        </div>
+        <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.3em] text-gray-400">
+            <a href="#servicios" class="hover:text-white transition">Soluciones</a>
+            <a href="#n8n" class="hover:text-white transition">Infraestructura</a>
+            <a href="#contacto" class="hover:text-white transition">Contacto</a>
+        </div>
+        <a href="#contacto" class="px-6 py-2 border border-blue-500/50 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-blue-600 transition">Agendar Auditoría</a>
+    </nav>
+
+    <header class="max-w-5xl mx-auto text-center py-28 md:py-44 px-6">
+        <span class="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/5 text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] mb-8 inline-block animate-pulse">Engineering Future Operations</span>
+        <h1 class="text-6xl md:text-8xl font-black mb-10 leading-tight tracking-tighter gradient-blue">
+            Sistemas que Piensan.<br>Negocios que Escalan.
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+            Arquitecturas de IA personalizadas para empresas que buscan eliminar la dependencia operativa y maximizar su rentabilidad neta.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-5">
+            <a href="#contacto" class="px-12 py-5 bg-white text-black font-black rounded-xl text-xs uppercase tracking-[0.2em] hover:bg-blue-600 hover:text-white transition accent-glow">
+                Optimizar mi Empresa
+            </a>
+            <a href="#servicios" class="px-12 py-5 glass-card border-white/10 text-white font-bold rounded-xl text-xs uppercase tracking-[0.2em] hover:bg-white/5 transition">
+                Ver Soluciones
+            </a>
+        </div>
+    </header>
+
+    <section id="servicios" class="max-w-7xl mx-auto px-8 py-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-10 rounded-3xl hover:border-blue-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-8 border border-blue-500/20 group-hover:bg-blue-600 transition duration-500">
+                    <svg class="w-6 h-6 text-blue-500 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-black mb-4 uppercase tracking-tight">Growth Engines</h3>
+                <p class="text-gray-400 font-light text-sm leading-relaxed">Sistemas de prospección autónomos. Clasificación de leads y agendamiento 24/7 sin intervención humana.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl border-blue-500/40 bg-blue-500/5 relative overflow-hidden group">
+                <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-8 border border-blue-500/40 group-hover:bg-blue-600 transition duration-500">
+                    <svg class="w-6 h-6 text-blue-500 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-black mb-4 uppercase tracking-tight text-blue-400">Ecosistemas n8n</h3>
+                <p class="text-gray-300 font-light text-sm leading-relaxed">Infraestructura privada (On-Premise). Unificamos CRM, Facturación y Operaciones en flujos inteligentes.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl hover:border-blue-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-8 border border-blue-500/20 group-hover:bg-blue-600 transition duration-500">
+                    <svg class="w-6 h-6 text-blue-500 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10"></path></svg>
+                </div>
+                <h3 class="text-xl font-black mb-4 uppercase tracking-tight">Auditoría & Análisis</h3>
+                <p class="text-gray-400 font-light text-sm leading-relaxed">Procesamiento masivo de datos financieros y operativos. Detección automática de anomalías y glosas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-32 px-8 max-w-4xl mx-auto">
+        <div class="glass-card p-12 rounded-[3rem] border-white/10 accent-glow">
+            <div class="mb-12 text-center">
+                <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter italic">Solicitar Auditoría Senior</h2>
+                <p class="text-gray-400 font-light text-sm">Nuestro equipo analizará su infraestructura operativa en las próximas 24 horas.</p>
+            </div>
+            
+            <form action="https://formspree.io/f/TU_ID_AQUI" method="POST" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500 ml-1">Nombre y Cargo</label>
+                        <input type="text" name="nombre_cargo" required class="w-full p-4 rounded-xl text-sm" placeholder="Ej: Director Operativo - Holding Global">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500 ml-1">Empresa / Organización</label>
+                        <input type="text" name="empresa" required class="w-full p-4 rounded-xl text-sm" placeholder="Nombre de la compañía">
+                    </div>
+                </div>
+                
+                <div class="space-y-2">
+                    <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500 ml-1">Correo Electrónico de Contacto</label>
+                    <input type="email" name="email" required class="w-full p-4 rounded-xl text-sm" placeholder="correo@empresa.com">
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500 ml-1">Área de Optimización Primaria</label>
+                    <select name="area" class="w-full p-4 rounded-xl text-sm appearance-none cursor-pointer">
+                        <option value="ventas">Automatización de Ventas (Leads)</option>
+                        <option value="n8n">Operaciones e Infraestructura n8n</option>
+                        <option value="auditoria">Auditoría de Cuentas / Finanzas</option>
+                        <option value="ia">Gestión de Datos & IA Personalizada</option>
+                    </select>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-[10px] font-bold uppercase tracking-widest text-gray-500 ml-1">Reto Operativo Actual</label>
+                    <textarea name="mensaje" class="w-full p-4 rounded-xl text-sm h-32" placeholder="Describa el proceso o cuello de botella que desea automatizar..."></textarea>
+                </div>
+
+                <input type="hidden" name="_replyto" value="aeterna.ai03@gmail.com">
+
+                <button type="submit" class="w-full py-5 bg-blue-600 hover:bg-blue-500 text-white font-black rounded-xl text-xs uppercase tracking-[0.3em] transition shadow-xl shadow-blue-600/20">
+                    Iniciar Transformación Operativa
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-3xl font-black tracking-tighter uppercase mb-8 italic">ÆTERNA</div>
+            <div class="flex justify-center space-x-12 text-[10px] font-bold text-gray-500 uppercase tracking-[0.3em] mb-12">
+                <a href="#" class="hover:text-blue-500 transition">BOGOTÁ</a>
+                <a href="#" class="hover:text-blue-500 transition">DUBÁI</a>
+                <a href="#" class="hover:text-blue-500 transition">SINGAPUR</a>
+            </div>
+            <p class="text-[10px] text-gray-600 font-medium tracking-widest">© 2026 ÆTERNA.AI | ENGINEERING BEYOND LIMITS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
